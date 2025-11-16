@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Patua One', serif;
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:url('./background.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+nav .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.container .logo{
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.container .links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+.container .links a:hover{
+    color: rgb(23,115,115);
+}
+
+.container .social-links{
+    display: flex;
+}
+.container .social-links div{
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 40px;
+    transition: 0.4s ease;
+}
+
+.container .social-links div:hover{
+    background-color: black;
+}
+
+/* Section Starts */
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+section .content{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.content .heading{
+    color: white;
+    width: 600px;
+
+}
+
+.content .heading h3{
+    background-color: green;
+    width: 200px;
+    padding: 7px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.content .heading h1{
+    font-size:4.5rem ;
+    margin-bottom: 25px; 
+}
+
+.content .heading p{
+    font-size: 1.4rem;
+}
+
+.content .heading button{
+    margin: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.content .heading button:hover{
+    background-color: transparent;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+    color: green;
+}
+
+section .image img{
+    width: 650px;
+    margin-top: 45px;
+    filter: drop-shadow(5px 5px 10px white);
+}
+
+
+.quality{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality .experience{
+    display: flex;
+    color: #646567;
+    align-items: center;
+}
+
+.experience h1{
+    font-size: 4rem;
+}
+.experience label{
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.gap{
+    margin-left: 30px;
+}
+    </style>
+    
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><h1><strong>HAMESH</strong>BHANDARI</h1></div>
+            <div class="links">
+                <a href="">Service</a>
+                <a href="">Works</a>
+                <a href="">Notes</a>
+                <a href="">Contacts</a>
+            </div>
+            <div class="social-links">
+                <div class="twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <label for="">Twitter</label>
+                </div>
+                <div class="github">
+                    <i class="fa-brands fa-github"></i>
+                    <label for="">Github</label>
+                </div>
+                <div class="mail"><i class="fa-regular fa-envelope"></i></div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="heading">
+                <h3 data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">Front-end Developer</h3>
+                <h1 data-aos="fade-right" data-aos-duration="1100" data-aos-delay="400">Talk is Cheap. <span>Show me the Code</span></h1>
+                <p data-aos="fade-right" data-aos-duration="1100" data-aos-delay="600">I design and code beautifully simple things. and I love what I do.</p>
+                <button data-aos="fade-right" data-aos-duration="1100" data-aos-delay="800">LET'S CHAT</button>
+            </div>
+            <div class="image" data-aos="fade-left" data-aos-duration="1500"><img src="C:\Users\lapto\OneDrive\Desktop\profile.png" alt="profile"></div>
+        </div>
+    </section>
+    <div class="quality">
+        <div class="experience">
+            <h1>12</h1>
+            <label for="">YEARS EXPERIENCE</label>
+        </div>
+        <div class="experience gap">
+            <h1>165</h1>
+            <label for="">PROJECTS COMPLETED ON 18 COUNTRIES</label>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
